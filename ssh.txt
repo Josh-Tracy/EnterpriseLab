@@ -1,0 +1,10 @@
+! SSH Configuration for enterprise devices
+! Enables SSH V2 on devices
+!
+ip domain-name enterprise.com
+crypto key generate rsa
+1024
+ip ssh version 2
+ip ssh time-out 30
+ip ssh authentication-retries 2
+!

@@ -1,0 +1,12 @@
+! local login information
+! The Hashed password is "password"
+!
+username admin privilege 15 secret 5 $1$J1IB$TAbii7ke6mZZe7Iy6nIcb0
+enable secret 5 $1$5Wzg$Om1uMxZXlYWqQQBIEKBp01
+!
+!
+! For using local login enable aaa with login defualt local 
+!
+aaa new-model
+aaa authentication login default local
+!
