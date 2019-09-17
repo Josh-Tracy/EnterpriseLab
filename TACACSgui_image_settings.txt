@@ -1,0 +1,5 @@
+Apline Linux TACACSgui Image Settings Apline Linux 3.7
+
+ifconfig eth0 10.1.1.2 255.255.255.240 10.1.1.1
+route add default gw 10.1.1.1
+

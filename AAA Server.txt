@@ -1,0 +1,19 @@
+! AAA server login
+!
+! Add the local username and password information below to ensure you do not get locked out. 
+!
+username admin privilege 15 secret 5 $1$J1IB$TAbii7ke6mZZe7Iy6nIcb0
+enable secret 5 $1$5Wzg$Om1uMxZXlYWqQQBIEKBp01
+!
+! Once done do the below commands to setup remote access using a AAA server.
+!
+!
+aaa new-model
+tacacs-server host < server ip >  key < pre-shared key>
+aaa authentication login <gropup> tacacs+ local
+aaa authentication enable default group tacacs+ enable
+!
+! Ensure VTY lines contain login authentication < DEVICE GROUP NAME > 
+!
+line vty 0 4
+  login authentication < group >
