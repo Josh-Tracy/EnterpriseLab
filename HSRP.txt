@@ -1,0 +1,6 @@
+standby < group > ip < ip > 
+standby < group > priority < priority >
+standby preempt
+standby authentication < key > 
+
+
